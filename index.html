@@ -101,6 +101,37 @@
         .btn:hover { background: #3a5e32; transform: translateY(-3px); }
         .btn-secondary { display: inline-block; background: transparent; color: var(--green); border: 2px solid var(--green); padding: 14px 30px; text-decoration: none; font-weight: 600; border-radius: 2px; transition: 0.3s; font-size: 0.9rem; }
         .btn-secondary:hover { background: rgba(45,74,39,0.05); }
+
+        details {
+            background: white;
+            padding: 18px 22px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+            transition: background 0.2s ease;
+        }
+        details:last-child { margin-bottom: 0; }
+        summary {
+            font-weight: 600;
+            color: var(--green);
+            font-size: 1rem;
+            outline: none;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        summary::-webkit-details-marker { display: none; }
+        summary::after {
+            content: "+";
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--green);
+            margin-left: 15px;
+        }
+        details[open] summary::after { content: "—"; }
+        details p { margin-top: 12px; margin-bottom: 0; font-size: 0.95rem; color: #555; }
         
         footer { text-align: center; font-size: 0.8rem; color: #777; padding: 40px 0; }
     </style>
@@ -112,7 +143,7 @@
         <div class="hero-overlay">
             <h1>Василиса</h1>
             <div class="profession">Психолог & Сексолог</div>
-            <div class="subtitle">Бережное пространство для твоей честности, глубины и удовольствия.</div>
+            <div class="subtitle">Про то, о чём неудобно говорить даже подругам.</div>
         </div>
     </header>
 
@@ -142,7 +173,7 @@
                         Выгорание, потеря смыслов и эмоциональное истощение.
                     </li>
                 </ul>
-                <p style="margin-top: 15px;"><i>* Работаю со всем, кроме химических зависимостей</i></p>
+                <p style="margin-top: 15px;"><i>* Не работаю с острыми состояниями, тяжёлыми диагнозами и химическими зависимостями.</i></p>
             </div>
             <div>
                 <h2>Темы сексуальности</h2>
@@ -174,6 +205,7 @@
             <li><strong>Сексология:</strong> Дипломированный сексолог и секс-коуч.</li>
             <li><strong>Повышение квалификации:</strong> Профессиональная деятельность в области социальных услуг.</li>
             <li><strong>Мировой опыт:</strong> Сертификаты Copenhagen Business School и University of Chicago.</li>
+            <li><strong>Практика:</strong> 600 часов живых консультаций, практика с 2023 года.</li>
         </ul>
         
         <p><i>Ниже представлена лишь часть моих сертификатов и подтверждений квалификации:</i></p>
@@ -200,12 +232,20 @@
                 <div class="rule-number">2</div>
                 <div>
                     <strong>Интенсив «Код Удовольствия»</strong>
-                    <p>Если вы пока не готовы идти в индивидуальную работу, вы можете приобрести интенсив для самостоятельного прохождения и работы с телесными блоками.</p>
+                    <p>10 дней практик на 10–30 минут в день, личный чат со мной, доступ к материалам на 3 месяца.</p>
                     <a href="https://vasilisapotapova126-gif.github.io/code-of-pleasure/" class="btn" style="margin-top: 12px; display: inline-block;">Открыть Код Удовольствия</a>
                 </div>
             </div>
             <div class="rule-item">
                 <div class="rule-number">3</div>
+                <div>
+                    <strong>Бесплатный урок (30 минут)</strong>
+                    <p>Упражнения на расслабление челюсти, голос и интонацию. Попробуй один день из интенсива до покупки. Напиши мне в Telegram слово «урок».</p>
+                    <a href="https://t.me/vasilisa_potapova" class="btn" style="margin-top: 12px; display: inline-block;">Получить урок</a>
+                </div>
+            </div>
+            <div class="rule-item">
+                <div class="rule-number">4</div>
                 <div>
                     <strong>Начать с малого</strong>
                     <p>Если вы пока не готовы ни к работе, ни к интенсиву — начните с полезностей, честных разборов и подкастов в открытом Telegram-канале.</p>
@@ -227,11 +267,51 @@
             <div>
                 <div class="price-card" style="background: var(--green); color: var(--cream);">
                     <h3 style="color: var(--cream);">Пакет из 4 сессий</h3>
-                    <p><span class="price-old" style="color: #ccc;">12 000 ₽</span> <strong style="font-size: 1.5rem;">10 000 ₽</strong></p>
-                    <span class="benefit" style="color: #a8d0a0;">Выгода 2 000 ₽</span>
+                    <p><span class="price-old" style="color: #ccc;">12 000 ₽</span> <strong style="font-size: 1.5rem;">11 500 ₽</strong></p>
+                    <span class="benefit" style="color: #a8d0a0;">Выгода 500 ₽</span>
                     <a href="https://t.me/vasilisa_potapova" class="btn" style="background: white; color: var(--green); padding: 10px 20px; font-size: 0.85rem; margin-top: 15px;">Взять пакет</a>
                 </div>
             </div>
+        </div>
+        <div style="margin-top: 20px;">
+            <div class="price-card" style="border-left: 5px solid var(--green);">
+                <h3>Интенсив «Код Удовольствия»</h3>
+                <p><strong style="font-size: 1.3rem;">5 300 ₽</strong></p>
+                <p style="font-size: 0.9rem; margin-bottom: 15px;">10 дней, личный чат со мной, материалы на 3 месяца.</p>
+                <a href="https://vasilisapotapova126-gif.github.io/code-of-pleasure/" class="btn" style="padding: 10px 20px; font-size: 0.85rem;">Открыть интенсив</a>
+            </div>
+        </div>
+
+        <h2>Вопросы и ответы</h2>
+        <div style="margin-top: 30px;">
+            <details>
+                <summary>С какого возраста ты работаешь?</summary>
+                <p>Я работаю только с совершеннолетними.</p>
+            </details>
+            <details>
+                <summary>Как записаться?</summary>
+                <p>Напиши мне в Telegram, подберём время.</p>
+            </details>
+            <details>
+                <summary>Как проходят сессии?</summary>
+                <p>60 минут, онлайн, на платформе Яндекс Телемост.</p>
+            </details>
+            <details>
+                <summary>Как проходит первая сессия?</summary>
+                <p>Ты рассказываешь, с чем пришла, и мы обсуждаем дальнейший план работы. Если тебе комфортно со мной, продолжаем. Решение, продолжать или нет, принимаешь ты.</p>
+            </details>
+            <details>
+                <summary>Как часто нужны сессии?</summary>
+                <p>Предпочтительно раз в неделю, максимум раз в 2 недели.</p>
+            </details>
+            <details>
+                <summary>Можно ли перенести сессию?</summary>
+                <p>Да, нужно предупредить не позднее чем за 24 часа.</p>
+            </details>
+            <details>
+                <summary>Это конфиденциально?</summary>
+                <p>Да. Всё, что ты рассказываешь на сессиях, остаётся между нами.</p>
+            </details>
         </div>
 
     </div>
@@ -241,5 +321,4 @@
     </footer>
 
 </body>
-</html>
 </html>
